@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejército Mexicano - Reclutamiento</title>
+    <style>
+        :root {
+            --military-green: #424632;
+            --light-green: #e6e7e2;
+            --white: #ffffff;
+            --gray: #f5f5f5;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--white);
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: var(--military-green);
+            color: var(--white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+        nav ul li a:hover {
+            opacity: 0.8;
+        }
+        .hero {
+            background-color: var(--light-green);
+            color: var(--military-green);
+            text-align: center;
+            padding: 4rem 0;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .cta-button {
+            background-color: var(--military-green);
+            color: var(--white);
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .cta-button:hover {
+            background-color: #5d6253;
+        }
+        .section {
+            padding: 4rem 0;
+        }
+        .section h2 {
+            color: var(--military-green);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .requirement-box {
+            background-color: var(--gray);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .requirement-box h3 {
+            color: var(--military-green);
+            margin-bottom: 1rem;
+        }
+        .requirement-box ul {
+            padding-left: 20px;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .submit-button {
+            background-color: var(--military-green);
+            color: var(--white);
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .submit-button:hover {
+            background-color: #5d6253;
+        }
+        .contact-info p {
+            margin-bottom: 1rem;
+        }
+        .ad-banner {
+            background-color: var(--light-green);
+            width: 256px;
+            height: 256px;
+            margin: 2rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: var(--military-green);
+            color: var(--white);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#requisitos">Requisitos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>Sirve a tu País, Construye tu Futuro</h1>
+                <p>Únete al Ejército Mexicano y sé parte de algo más grande que tú mismo.</p>
+                <a  style="color: #fff;" target="_blank" href="https://www.gob.mx/sedena/articulos/reclutamiento-2024?idiom=es"><button class="cta-button">Más Información</button></a>
+            </div>
+        </section>
+
+        <section id="requisitos" class="section">
+            <div class="container">
+                <h2>Requisitos para Reclutamiento 2024</h2>
+                <div class="requirements-grid">
+                    <div class="requirement-box">
+                        <h3>Requisitos Generales</h3>
+                        <ul>
+                            <li>Edad: De 18 y hasta los 29 años con 11 meses y 30 días.</li>
+                            <li>Estatura: Mujeres 1.56 metros; Hombres 1.63 metros.</li>
+                            <li>Índice de Masa Muscular: Mínimo 18 kg/m2; máximo 24.9 kg/m2.</li>
+                            <li>Tatuajes: No deben estar en un lugar visible, ni en dimensiones mayores a 10 x 10 cm.</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-box">
+                        <h3>Documentos Requeridos</h3>
+                        <ul>
+                            <li>Cartilla de identidad del Servicio Militar</li>
+                            <li>Acta de Nacimiento</li>
+                            <li>CURP</li>
+                            <li>INE</li>
+                            <li>Certificado de Secundaria</li>
+                            <li>Constancia de antecedentes no penales</li>
+                            <li>Comprobante de domicilio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <div class="contact-grid">
+                    
+                    <div class="contact-info">
+                        <p><strong>Teléfono:</strong> 01 800 712 0665</p>
+                        <p><strong>Email:</strong> atencionpublico@sedena.gob.mx</p>
+                        <p><strong>Dirección:</strong> Av. Industria Militar 1083, Lomas de Sotelo, Miguel Hidalgo, 11200 Ciudad de México, CDMX</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <div class="ad-banner">
+                <p>Espacio para Banner Publicitario (256x256)</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
